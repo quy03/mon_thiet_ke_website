@@ -1,0 +1,201 @@
+#topbar {
+    background: #e60000;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+}
+#topbar .topbar-content {
+    vertical-align: middle;
+    padding: 8px 10px;
+}
+#topbar .topbar-content {
+    font-weight: bold;
+    width: 98%;
+}
+#topbar .topbar-content .btn {
+    display: inline-block;
+    border-radius: 5px;
+    background: #fff;
+    padding: 7px 13px;
+    margin: 5px 0;
+    color: #e60000;
+    font-weight: bold;
+}
+
+#topbar .topbar-content .content {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial !important;
+}
+#topbar #close_topbar svg {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    fill: #fff;
+    opacity: 0.5;
+}
+#topbar #close_topbar:hover svg {
+    opacity: 1;
+}
+#topbar .topbar-relative {
+    position: relative;
+}
+#topbar #close_topbar {
+    height: 30px;
+    display: block;
+    width: 30px;
+    position: absolute;
+    z-index: 999;
+    right: 5px;
+    top: 6px;
+}
+#topbar {
+    display: block;
+}
+#topbar.hide-topbar {
+    display: none;
+}
+@media (max-width: 767px) {
+    #topbar.affix-mobile-hihi {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+    }
+}
+@media (max-width: 414px) {
+    #topbar .topbar-content {
+        padding: 8px 10px;
+    }
+    #topbar #close_topbar {
+        right: -3px;
+    }
+}
+.smart-search-wrapper>a.thumbs{   
+	width: 32px;
+	display: inline-block;
+	padding: 5px 0px;
+	}
+
+
+
+.smart-search-wrapper>a.thumbs img {
+    position: absolute;
+    top: 0px;
+    width: 35px;
+    height: 35px;
+    left: 0px;
+}
+	.smart-search-wrapper{
+	position: fixed;
+	background: #fff;
+	border-top: none;
+	z-index: 999;
+	}
+
+	.smart-search-wrapper>a {
+	width: calc(100% - 32px);
+	float: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: pre;
+	color: #686767;
+	text-decoration: none;
+	line-height: 29px;
+	font-size: 13px;
+	font-family: sans-serif;
+  padding: 5px 160px 5px 5px;
+	position: relative;
+	height: 35px;
+	}
+
+	.smart-search-wrapper>a.select, .smart-search-wrapper>a:hover {
+    background: -webkit-linear-gradient(left, #fff,#EAEAEA); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #fff,#EAEAEA); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #fff,#EAEAEA ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, #fff,#EAEAEA ); /* Standard syntax (must be last) */
+	color: #000;
+	}
+
+	.smart-search-wrapper>a>span.price-search {
+	position: absolute;
+	right: 5px;
+	top:0px;
+	}
+    .smart-search-wrapper>a.thumbs{   
+        width: 32px;
+        display: inline-block;
+        padding: 5px 0px;
+        }
+    
+    
+    
+    .smart-search-wrapper>a.thumbs img {
+        position: absolute;
+        top: 0px;
+        width: 35px;
+        height: 35px;
+        left: 0px;
+    }
+        .smart-search-wrapper{
+        position: fixed;
+        background: #fff;
+        border-top: none;
+        z-index: 999;
+        }
+    
+        .smart-search-wrapper>a {
+        width: calc(100% - 32px);
+        float: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: pre;
+        color: #686767;
+        text-decoration: none;
+        line-height: 29px;
+        font-size: 13px;
+        font-family: sans-serif;
+      padding: 5px 160px 5px 5px;
+        position: relative;
+        height: 35px;
+        }
+    
+        .smart-search-wrapper>a.select, .smart-search-wrapper>a:hover {
+        background: -webkit-linear-gradient(left, #fff,#EAEAEA); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(left, #fff,#EAEAEA); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(left, #fff,#EAEAEA ); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(left, #fff,#EAEAEA ); /* Standard syntax (must be last) */
+        color: #000;
+        }
+    
+        .smart-search-wrapper>a>span.price-search {
+        position: absolute;
+        right: 5px;
+        top:0px;
+        }
+        #modalAddComplete {
+            border-radius: 8px;
+            overflow: hidden;
+}
+        .grim-text-info{
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .inner{
+         margin-top: 35px;
+         margin-bottom: 35px;
+            }
+        .contact-item{
+            margin-bottom: 18px;
+            font-size: 16px;
+            }
+        .contact-form form {
+            margin: 0px !important
+            }
+        .contact-form input[type=submit] {
+            float: left !important;
+            }

@@ -1,0 +1,330 @@
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0px auto;
+}
+
+#wrapper {
+    box-shadow: 0 0 1px 0 #adadad;
+    /*tô màu cho row của wrapper*/
+}
+
+
+/* css để giữ thanh menu khi lăn chuột xuống*/
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    /* Đặt màu nền của thanh menu bar */
+    z-index: 100;
+    /* Đảm bảo thanh menu nằm trên các phần tử khác */
+}
+
+
+/*css cho thanh menu*/
+nav {
+    display: flex;
+    /*hiển thị các phần tử trong menu theo chiều ngang*/
+    justify-content: space-between;
+    /*chia các phần tử 1 ra đầu 1 giữa 1 cuối*/
+    height: 60px;
+    /*đặt chiều cao mặc định cho thanh menu bar là 60px*/
+    align-items: center;
+    /* căn giữa các phần tử theo chiều dọc*/
+}
+
+
+
+/* css đẹp lại thẻ ul */
+#main-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+}
+
+#main-menu ul li {
+    margin-right: 40px;
+    /* cho khoảng cách giữa các thẻ li */
+}
+
+/* CSS code thanh menu */
+#main-menu ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    padding: 20px 0px;
+    /*padding này có tác dụng giữ cho thẻ sub menu vẫn hiện để trỏ chuột vào*/
+}
+
+#main-menu ul li a:hover {
+    color: #FF4621;
+    /* Màu cam khi di chuột vào chữ */
+}
+
+
+
+
+
+
+
+
+#main-menu li {
+    position: relative;
+    /* đặt vị trí tương đối cho phần tử cha */
+}
+
+/* css cho the sub menu ben duoi*/
+#main-menu ul.sub-menu {
+    position: absolute;
+    padding: px 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 18px;
+    font-size: 14px;
+    display: none;
+    width: 200px;
+}
+
+/* css cho thẻ a trong thanh menu đa cấp */
+#main-menu ul.sub-menu a {
+    padding: 10px 15px;
+    line-height: 30px;
+}
+
+/* khi trỏ chuột vào thì hiện ra thanh menu đa cấp*/
+#main-menu li:hover .sub-menu {
+    display: block;
+}
+
+
+
+
+
+
+
+.user_icon svg {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+form {
+    width: 320px;
+}
+
+#search-text {
+    outline: none;
+    border: none;
+    height: 28px;
+    background: none;
+    border-radius: 15px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+#search-text::placeholder {
+    color: #888;
+    /* Màu chữ gợi ý trong input */
+}
+
+.fa-solid.fa-magnifying-glass {
+    color: #888;
+    padding-left: 20px;
+
+
+}
+
+
+/* container main */
+.main-container {
+    /*main-container*/
+    width: 1000px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.leftside-video {
+    float: left;
+    width: 70%; /* Điều chỉnh chiều rộng của phần video */
+    width: 600px;
+}
+.rightside-video{
+    float: right;
+    width: 30%;
+}
+
+
+
+/* video */
+.custom-video{
+    width: 600px;
+}
+.below-video{
+    width: 600px;
+}
+/* dùng grid chia 3 thanh thich rinh va quang cao */
+.box1 {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+.link-box {
+    border: 1px solid #07A0D4;
+    /* Viền của hộp */
+    padding: 5px;
+    /* Khoảng cách bên trong hộp */
+    width: 100px;
+    /* Chiều rộng của hộp */
+    text-align: center;
+    /* Căn giữa nội dung */
+    background-color: #0A5C6F;
+    /* Màu nền của hộp */
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.link-box a {
+
+    text-decoration: none;
+    /* Loại bỏ gạch chân mặc định cho liên kết */
+    color: #07A0D4;
+    /* Màu chữ cho liên kết */
+}
+
+
+
+
+.film-c{
+    width: 160px;
+    height: 90px;
+}
+
+
+
+
+
+/* ben phai  */
+
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bolder {
+    border: 0.5px solid #3B3B3B;
+    width: 600px;
+}
+
+.film-info-title {
+    color: #AEBBAE;
+    width: 600px;
+
+}
+
+.film-info-tag span {
+    color: #AEBBAE;
+    bottom: 0;
+    left: 0;
+    background-color: #444444;
+    padding: 5px;
+
+}
+
+/* ben phai */
+.rightside-film-c{
+    float: left;
+    width: 50%;
+}
+.related-item-meta{
+    float: right;
+    width: 50%;
+}
+.film-c {
+    margin-left: -45px; /* Di chuyển ảnh sang trái 50px */
+    /* Các thuộc tính CSS khác cho ảnh */
+
+    margin-bottom: 10px; /* Khoảng cách từ dưới lên 5px */
+}
+
+.film-info-right{
+    padding-left: 130px;
+}
+
+.main-container .film-body-container-d{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    position: relative;
+ 
+}
+.film-body-container-c{
+    margin-top: -1214px;
+}
+.film-body-container-d img {
+    width: 190px;
+    height: 275px;
+
+}
+.film-info-right a{
+    text-decoration: none;
+    color: #1DBBEF;
+}
+.tray-item-description.tray-item-title div{
+    text-decoration: none;
+}
+
+
+/* hover */
+/* CSS */
+
+.fixed-anh{
+    overflow: hidden;
+}
+.tray-item-thumbnail {
+    transition: transform 0.3s; /* Áp dụng hiệu ứng transition cho thuộc tính transform */
+  }
+  
+  .tray-item-thumbnail:hover {
+    transform: scale(1.1); /* Khi di chuột qua, phóng to 110% */
+  }
+  
+
+
+/* overlay */
+.tray-item-description{
+    position: relative;
+}
+.tray-item-title {
+    position: absolute;
+    bottom: 0;
+    /* Điều chỉnh vị trí chữ film 1 theo y (dưới cùng) */
+    left: 0;
+    /* Điều chỉnh vị trí chữ film 1 theo x (bên trái) */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Màu nền của tiêu đề */
+    color: #fff;
+    /* Màu chữ tiêu đề */
+    padding: 4px 0;
+    /* Khoảng cách padding trên và dưới của tiêu đề (đặt padding bên trái và phải là 0) */
+    width: 100%;
+    /* Tiêu đề tràn qua ảnh theo chiều ngang */
+  }

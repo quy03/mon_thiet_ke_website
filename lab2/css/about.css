@@ -1,0 +1,40 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h1 {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.container .p1 {
+    font-size: 24px;
+}
+
+
+/* .container ul {
+    list-style-type: none;
+    padding: 0;
+} */
+
+.container ul li {
+    margin: 10px 0;
+}
+
+.container .p2 {
+    text-align: center;
+    background-color: wheat;
+    border-radius: 20px;
+}
